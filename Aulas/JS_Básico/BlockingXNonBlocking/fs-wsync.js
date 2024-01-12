@@ -5,7 +5,7 @@ console.log("Antes da leitura do arquivo");
 
 const dados = fs.readFile("file.txt", (err, data) => {
     if (err) throw err;
-    console.log("Terminei a leitura do arquivo.txt");
+    console.log("Terminei a leitura do arquivo.txt", data.toString());
 });
 
 

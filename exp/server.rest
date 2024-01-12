@@ -1,0 +1,33 @@
+### get admin
+GET http://localhost:3000/admin
+### get admin com id 
+GET http://localhost:3000/admin/250
+### acessando via post
+POST http://localhost:3000/admin
+Content-Type: application/json
+
+{
+    "login":"ryansilva",
+    "senha":"132456"
+}
+### acessando via pacth
+PATCH http://localhost:3000/admin/250
+### acessando via put
+PUT http://localhost:3000/admin/250
+### acessando via delete
+DELETE http://localhost:3000/admin/250
+
+### Acessando usuário ===========================
+
+### acessando usuario sem id
+GET http://localhost:3000/user
+### acessando usuario com id
+GET http://localhost:3000/user/228
+### acessando usuario com post
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "login":"ryansilva",
+    "senha":"132456"
+}
