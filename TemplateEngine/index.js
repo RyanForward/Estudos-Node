@@ -1,6 +1,7 @@
 const express  = require('express')
 const exphbs = require('express-handlebars')
 const app = express()
+const mysql = require('mysql')
 
 const hbs = exphbs.create({
     partialsDir: ['/views/partials'],
@@ -62,6 +63,18 @@ app.get('/', (req, res)=>{
     res.render('home', {user: user, palavra: palavra, auth, aprooved})
 })
 
-app.listen(3000, ()=>{
-    console.log('App funcionando')
+const conn = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'nodemysql',
 })
+
+conn.connect(function(err){
+    if(err){
+        console.log(err)
+    }
+    console.log('Conectou ao MySQL')
+    app.listen(3000)
+})
+
