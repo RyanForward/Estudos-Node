@@ -4,7 +4,8 @@
     <br>
     {{#each books}}
     <div class="book">
-    #{{this.id}} - <span class="bold">{{this.title}}</span> - {{this.pageqty}} páginas 
+    #{{this.id}} - <span class="bold"></span> 
+    <a href="/books/{{this.id}}">{{this.title}}</a>- {{this.pageqty}} páginas 
     </div>
     {{/each}}
 </div>

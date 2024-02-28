@@ -2,6 +2,22 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+#navbar{
+    border-bottom: 1px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+}
+
+#navbar ul li{
+    margin-left: 1em;
+}
+
 h1{
     text-align: center;
 }
@@ -54,4 +70,12 @@ h1{
 
 .book{
     margin: 5px;
+}
+
+#book-page{
+    padding: 2em;
+}
+
+#book-page .container{
+    text-align: center;
 }
